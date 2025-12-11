@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.js">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="logo">CompanyName</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>We Help Grow Your Business</h1>
+            <p>Professional services to take your company to the next level.</p>
+            <button onclick="scrollToSection('contact')">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service-card">
+                <h3>Consulting</h3>
+                <p>Expert business consulting to help optimize your strategy.</p>
+            </div>
+            <div class="service-card">
+                <h3>Marketing</h3>
+                <p>Grow your brand with targeted marketing solutions.</p>
+            </div>
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>Modern websites and online tools built for your business.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section light">
+        <h2>About Us</h2>
+        <p>
+            We are a team of experienced professionals passionate about helping businesses succeed.
+            Our company has supported clients across multiple industries, delivering results with integrity and innovation.
+        </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <footer>
+        <p>© 2025 CompanyName. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
